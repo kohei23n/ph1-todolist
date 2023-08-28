@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PH1 To-Do List</title>
+    <!-- <script src="sweetalert2.all.min.js"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="/node_modules/sweetalert2/dist/sweetalert2.min.css">
+  </head>
+  <body>
+    <div class="p-10">
+      <div class="w-full flex justify-center items-center flex-col">
+        <input
+          id="new-todo"
+          class="border mb-5 p-2 w-full max-w-lg"
+          type="text"
+          placeholder="新しいToDoを入力してください"
+        />
+        <button
+          id="add-button"
+          class="mb-5 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-40 text-center"
+        >
+          追加
+        </button>
+        <ul id="todo-list" class="space-y-4"></ul>
+      </div>
+    </div>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
