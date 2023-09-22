@@ -1,5 +1,3 @@
-// import * as Swal from './node_modules/sweetalert2/dist/sweetalert2.min.js'
-
 "use strict";
 
 const inputElement = document.querySelector("#new-todo");
@@ -38,8 +36,7 @@ const toggleTodo = (index) => {
     Swal.fire({
       icon: 'success',
       title: '完了!',
-      text: 'ToDoが完了しました。',
-      timer: 1500,
+      text: 'To-Do が完了しました。',
     });
   }
   renderTodoList();
